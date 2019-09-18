@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 '''
 '  makeblog
-'  Author: cpx741
+'  Author: chadwick
 '  Version 0.2.2
 '  Date Updated: 2019-06-07
-'  https://github.com/cpx741/makeblog.git
+'  https://github.com/chadpierce/makeblog.git
 
 '  Sitebuilder converts markdown text to html for WEBSITENAME.net
 '  Requirements: python3 with markdown module
