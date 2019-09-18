@@ -205,10 +205,12 @@ def update_tags(header):
 	etags = get_existing_tags()
 	# FIXME hacky thing here, make better way to track existing tags for individual tag files
 	oldtags = etags
+	# FIXME this is a dumb way to cycle through the existing tags
+	a_etags, b_etags = zip(*etags)
 	ntags = []
 	ptags = header[3]
 	for tag in ptags:
-		if tag not in etags[0]:
+		if tag not in a_etags:
 			new_tag = [[tag,input("    ENTER description for new tag - " + tag + ": ")]]
 			etags = etags + new_tag
 			ntags = ntags + new_tag
